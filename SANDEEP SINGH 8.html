@@ -1,0 +1,1680 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="40289186-d744-4117-9fdd-4b19b8e4dbe6" data-section-id="40289186-d744-4117-9fdd-4b19b8e4dbe6">
+
+<htmlCode>
+<div id="root">
+  <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 border-b border-red-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="text-red-600 font-['OCR A Extended'] text-2xl glitch-text">SANDEEP SINGH</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#hero" class="nav-link text-gray-300 hover:text-red-600 px-3 py-2 font-medium animate__animated">Home</a>
+            <a href="#about" class="nav-link text-gray-300 hover:text-red-600 px-3 py-2 font-medium animate__animated">About</a>
+            <a href="#skills" class="nav-link text-gray-300 hover:text-red-600 px-3 py-2 font-medium animate__animated">Skills</a>
+            <a href="#projects" class="nav-link text-gray-300 hover:text-red-600 px-3 py-2 font-medium animate__animated">Projects</a>
+            <a href="#certifications" class="nav-link text-gray-300 hover:text-red-600 px-3 py-2 font-medium animate__animated">Certs</a>
+            <a href="#contact" class="nav-link text-gray-300 hover:text-red-600 px-3 py-2 font-medium animate__animated">Contact</a>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-red-600 hover:text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-t border-red-600">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#hero" class="nav-link block text-gray-300 hover:text-red-600 px-3 py-2 font-medium">Home</a>
+        <a href="#about" class="nav-link block text-gray-300 hover:text-red-600 px-3 py-2 font-medium">About</a>
+        <a href="#skills" class="nav-link block text-gray-300 hover:text-red-600 px-3 py-2 font-medium">Skills</a>
+        <a href="#projects" class="nav-link block text-gray-300 hover:text-red-600 px-3 py-2 font-medium">Projects</a>
+        <a href="#certifications" class="nav-link block text-gray-300 hover:text-red-600 px-3 py-2 font-medium">Certs</a>
+        <a href="#contact" class="nav-link block text-gray-300 hover:text-red-600 px-3 py-2 font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+      } else {
+        menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+      }
+    });
+
+    // Add hover animations to nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.classList.add('animate__pulse');
+      });
+      link.addEventListener('animationend', () => {
+        link.classList.remove('animate__pulse');
+      });
+    });
+
+    // Glitch effect on logo
+    const glitchText = document.querySelector('.glitch-text');
+    setInterval(() => {
+      glitchText.style.textShadow = `
+        ${Math.random() * 10}px ${Math.random() * 10}px ${Math.random() * 10}px rgba(255,0,0,0.7),
+        ${Math.random() * -10}px ${Math.random() * 10}px ${Math.random() * 10}px rgba(0,255,255,0.7)
+      `;
+      setTimeout(() => {
+        glitchText.style.textShadow = 'none';
+      }, 50);
+    }, 3000);
+  </script>
+</div>
+</htmlCode></element><element id="1279e894-44ec-4d2a-9ca2-e222d4a33dbd" data-section-id="1279e894-44ec-4d2a-9ca2-e222d4a33dbd">
+
+<htmlCode>
+<div id="root">
+  <section id="hero" class="h-screen bg-neutral-900 relative overflow-hidden">
+    <!-- Binary Rain Canvas -->
+    <canvas id="binaryRain" class="absolute inset-0 opacity-20"></canvas>
+
+    <!-- Glitch Overlay -->
+    <div class="glitch-overlay absolute inset-0 pointer-events-none"></div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex items-center justify-center h-full">
+      <div class="text-center px-4">
+        <h1 class="text-6xl md:text-8xl font-['Orbitron'] text-red-600 mb-4 glitch-text animate__animated animate__fadeIn">
+          CYBER SPECIALIST
+        </h1>
+        <div class="terminal-text text-green-500 font-['Courier New'] text-xl md:text-2xl mb-8 typewriter">
+          <span id="terminalOutput"></span>
+          <span class="cursor">_</span>
+        </div>
+        <div class="animate__animated animate__fadeIn animate__delay-1s">
+          <a href="#about" class="inline-block px-8 py-3 bg-red-600 text-white font-['OCR A Extended'] border-2 border-red-600 hover:bg-transparent hover:text-red-600 transition-all duration-300 relative overflow-hidden warning-btn">
+            <span class="relative z-10">ENTER IF YOU DARE</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Warning Alert -->
+    <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+      <div class="warning-alert bg-red-600/20 border-2 border-red-600 px-6 py-3 rounded-lg animate__animated animate__flash animate__infinite">
+        <p class="text-red-600 font-['Courier New'] text-sm md:text-base">
+          ! WARNING: UNAUTHORIZED ACCESS DETECTED !
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .glitch-overlay::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 0, 0, 0.1) 0px,
+        transparent 1px,
+        transparent 2px
+      );
+      animation: scan 8s linear infinite;
+    }
+
+    @keyframes scan {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100%); }
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .warning-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 0, 0, 0.2),
+        transparent
+      );
+      transition: 0.5s;
+    }
+
+    .warning-btn:hover::before {
+      left: 100%;
+    }
+  </style>
+
+  <script>
+    // Binary Rain Effect
+    const canvas = document.getElementById('binaryRain');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const binary = '10';
+    const fontSize = 14;
+    const columns = canvas.width/fontSize;
+    const drops = new Array(Math.floor(columns)).fill(1);
+
+    function drawBinaryRain() {
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      ctx.fillStyle = '#ff0000';
+      ctx.font = fontSize + 'px monospace';
+
+      for(let i = 0; i < drops.length; i++) {
+        const text = binary.charAt(Math.floor(Math.random() * binary.length));
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+        
+        if(drops[i] * fontSize > canvas.height && Math.random() > 0.975)
+          drops[i] = 0;
+        
+        drops[i]++;
+      }
+    }
+
+    setInterval(drawBinaryRain, 33);
+
+    // Terminal Text Effect
+    const messages = [
+      'Initializing system breach...',
+      'Accessing restricted areas...',
+      'Deploying cyber weapons...',
+      'System compromised successfully.'
+    ];
+
+    let messageIndex = 0;
+    let charIndex = 0;
+    const terminalOutput = document.getElementById('terminalOutput');
+
+    function typeWriter() {
+      if (charIndex < messages[messageIndex].length) {
+        terminalOutput.textContent += messages[messageIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 50);
+      } else if (messageIndex < messages.length - 1) {
+        setTimeout(() => {
+          terminalOutput.textContent = '';
+          messageIndex++;
+          charIndex = 0;
+          typeWriter();
+        }, 1000);
+      }
+    }
+
+    typeWriter();
+  </script>
+</div>
+</htmlCode></element><element id="62788696-0ba2-41b2-9603-f3706f276cf3" data-section-id="62788696-0ba2-41b2-9603-f3706f276cf3">
+
+<htmlCode>
+<div id="root">
+  <section id="about" class="min-h-screen bg-neutral-900 relative py-20">
+    <!-- Glitch Grid Background -->
+    <div class="absolute inset-0 grid-background"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <!-- Hacker Silhouette -->
+        <div class="w-full md:w-1/2 relative">
+          <div class="hacker-outline w-64 h-64 mx-auto relative">
+            <div class="absolute inset-0 border-2 border-red-600 animate-pulse"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-red-600/20 to-purple-600/20"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg class="w-32 h-32 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal Interface -->
+        <div class="w-full md:w-1/2">
+          <div class="terminal-window bg-neutral-800 border-2 border-red-600 p-4 rounded-lg">
+            <div class="terminal-header flex items-center mb-4">
+              <div class="w-3 h-3 rounded-full bg-red-600 mr-2"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-600 mr-2"></div>
+              <div class="w-3 h-3 rounded-full bg-green-600"></div>
+            </div>
+            
+            <div class="terminal-content font-['Courier New'] text-green-500">
+              <div id="about-text" class="space-y-4">
+                <p class="terminal-line">> INITIALIZING PROFILE SCAN...</p>
+                <p class="terminal-line">> NAME: [REDACTED]</p>
+                <p class="terminal-line">> ROLE: CYBER SECURITY SPECIALIST</p>
+                <p class="terminal-line">> STATUS: ACTIVE</p>
+                <p class="terminal-line">> MISSION: PROTECTING DIGITAL ASSETS AND HUNTING THREATS</p>
+                <p class="terminal-line typing-effect">> SPECIALIZATION: 
+                  <span class="text-red-600">
+                    PENETRATION TESTING | MALWARE ANALYSIS | INCIDENT RESPONSE
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tool Icons -->
+          <div class="mt-8 grid grid-cols-4 gap-4">
+            <div class="tool-icon">
+              <i class="fas fa-bug text-red-600 text-2xl hover:text-red-400 transition-all"></i>
+            </div>
+            <div class="tool-icon">
+              <i class="fas fa-shield-alt text-red-600 text-2xl hover:text-red-400 transition-all"></i>
+            </div>
+            <div class="tool-icon">
+              <i class="fas fa-terminal text-red-600 text-2xl hover:text-red-400 transition-all"></i>
+            </div>
+            <div class="tool-icon">
+              <i class="fas fa-code text-red-600 text-2xl hover:text-red-400 transition-all"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .grid-background {
+      background-image: linear-gradient(rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      animation: gridMove 20s linear infinite;
+    }
+
+    @keyframes gridMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 20px 20px; }
+    }
+
+    .terminal-line {
+      position: relative;
+      opacity: 0;
+      animation: terminalFadeIn 0.5s ease forwards;
+    }
+
+    @keyframes terminalFadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .tool-icon {
+      @apply flex items-center justify-center p-3 border-2 border-red-600 rounded-lg 
+             hover:bg-red-600/20 transition-all duration-300 cursor-pointer;
+    }
+
+    .hacker-outline {
+      animation: glitchEffect 2s infinite;
+    }
+
+    @keyframes glitchEffect {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+  </style>
+
+  <script>
+    // Terminal typing effect
+    document.querySelectorAll('.terminal-line').forEach((line, index) => {
+      line.style.animationDelay = `${index * 0.5}s`;
+    });
+
+    // Random glitch effect on terminal text
+    setInterval(() => {
+      const lines = document.querySelectorAll('.terminal-line');
+      const randomLine = lines[Math.floor(Math.random() * lines.length)];
+      randomLine.style.textShadow = '2px 2px 15px rgba(255,0,0,0.5)';
+      setTimeout(() => {
+        randomLine.style.textShadow = 'none';
+      }, 150);
+    }, 3000);
+
+    // Tool icons hover effect
+    document.querySelectorAll('.tool-icon').forEach(icon => {
+      icon.addEventListener('mouseover', () => {
+        icon.style.transform = `rotate(${Math.random() * 10 - 5}deg)`;
+      });
+      icon.addEventListener('mouseout', () => {
+        icon.style.transform = 'rotate(0deg)';
+      });
+    });
+  </script>
+</div>
+</htmlCode></element><element id="840c52f0-e868-4833-8829-3059869d8fc0" data-section-id="840c52f0-e868-4833-8829-3059869d8fc0">
+
+<htmlCode>
+<div id="root">
+  <section id="skills" class="min-h-screen bg-neutral-900 relative py-20">
+    <!-- Network Grid Background -->
+    <div class="absolute inset-0 network-grid"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl md:text-6xl font-['Orbitron'] text-red-600 text-center mb-16 glitch-text">DANGER ZONES</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Skill Cards -->
+        <div class="skill-card" data-skill="Penetration Testing">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg hover:bg-red-900/20 transition-all">
+            <div class="skill-header flex justify-between items-center mb-4">
+              <h3 class="text-xl font-['OCR A Extended'] text-red-600">PENETRATION TESTING</h3>
+              <div class="danger-level flex space-x-1">
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse"></span>
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse delay-100"></span>
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse delay-200"></span>
+              </div>
+            </div>
+            <div class="progress-container relative h-4 bg-neutral-700 rounded overflow-hidden">
+              <div class="progress-bar w-[90%] h-full bg-red-600 glitch-bar"></div>
+            </div>
+            <div class="mt-4 skill-details hidden">
+              <pre class="text-green-500 font-['Courier New'] text-sm overflow-x-auto">
+[+] nmap -sS -sV target
+[+] sqlmap --dump
+[+] metasploit > exploit
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="Malware Analysis">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg hover:bg-red-900/20 transition-all">
+            <div class="skill-header flex justify-between items-center mb-4">
+              <h3 class="text-xl font-['OCR A Extended'] text-red-600">MALWARE ANALYSIS</h3>
+              <div class="danger-level flex space-x-1">
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse"></span>
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse delay-100"></span>
+              </div>
+            </div>
+            <div class="progress-container relative h-4 bg-neutral-700 rounded overflow-hidden">
+              <div class="progress-bar w-[85%] h-full bg-red-600 glitch-bar"></div>
+            </div>
+            <div class="mt-4 skill-details hidden">
+              <pre class="text-green-500 font-['Courier New'] text-sm overflow-x-auto">
+[*] Analyzing sample...
+[*] Detected: Polymorphic
+[*] Threat Level: Critical
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-skill="Social Engineering">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg hover:bg-red-900/20 transition-all">
+            <div class="skill-header flex justify-between items-center mb-4">
+              <h3 class="text-xl font-['OCR A Extended'] text-red-600">SOCIAL ENGINEERING</h3>
+              <div class="danger-level flex space-x-1">
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse"></span>
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse delay-100"></span>
+                <span class="h-2 w-2 bg-red-600 rounded-full animate-pulse delay-200"></span>
+              </div>
+            </div>
+            <div class="progress-container relative h-4 bg-neutral-700 rounded overflow-hidden">
+              <div class="progress-bar w-[95%] h-full bg-red-600 glitch-bar"></div>
+            </div>
+            <div class="mt-4 skill-details hidden">
+              <pre class="text-green-500 font-['Courier New'] text-sm overflow-x-auto">
+[!] Phishing Campaign
+[!] Psychological Manipulation
+[!] Access Granted
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .network-grid {
+      background: 
+        linear-gradient(rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+      background-size: 30px 30px;
+      animation: gridPulse 2s infinite;
+    }
+
+    @keyframes gridPulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 0.7; }
+      100% { opacity: 0.3; }
+    }
+
+    .glitch-bar {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glitch-bar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      animation: glitch 2s infinite;
+    }
+
+    @keyframes glitch {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+  </style>
+
+  <script>
+    // Skill card interaction
+    document.querySelectorAll('.skill-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const details = card.querySelector('.skill-details');
+        details.classList.toggle('hidden');
+        
+        // Play glitch sound effect
+        const audio = new Audio('data:audio/wav;base64,UklGRh...');
+        audio.volume = 0.2;
+        audio.play();
+        
+        // Add glitch visual effect
+        card.classList.add('glitch-effect');
+        setTimeout(() => card.classList.remove('glitch-effect'), 500);
+      });
+
+      // Hover animation
+      card.addEventListener('mouseover', () => {
+        const progressBar = card.querySelector('.progress-bar');
+        progressBar.style.filter = 'brightness(1.5) saturate(1.5)';
+      });
+
+      card.addEventListener('mouseout', () => {
+        const progressBar = card.querySelector('.progress-bar');
+        progressBar.style.filter = 'none';
+      });
+    });
+
+    // Random glitch effect on skill titles
+    setInterval(() => {
+      const titles = document.querySelectorAll('.skill-header h3');
+      const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+      randomTitle.style.textShadow = '2px 2px 15px rgba(255,0,0,0.8)';
+      setTimeout(() => {
+        randomTitle.style.textShadow = 'none';
+      }, 150);
+    }, 2000);
+  </script>
+</div>
+</htmlCode></element><element id="17e3dff8-eca9-416f-80f3-a9676b1e7871" data-section-id="17e3dff8-eca9-416f-80f3-a9676b1e7871">
+
+<htmlCode>
+<div id="root">
+  <section id="projects" class="min-h-screen bg-neutral-900 relative py-20">
+    <!-- Rotating Globe Background -->
+    <div class="absolute inset-0 globe-background"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl md:text-6xl font-['Orbitron'] text-red-600 text-center mb-16 glitch-text">DANGEROUS TOOLS</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="project-card" data-project="exploit-framework">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg transform transition-all duration-300 hover:scale-105">
+            <div class="warning-header flex items-center mb-4">
+              <div class="warning-symbol animate-pulse mr-2">
+                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-['OCR A Extended'] text-red-600">EXPLOIT FRAMEWORK</h3>
+            </div>
+            <div class="project-content">
+              <div class="terminal-window bg-neutral-900 p-4 rounded">
+                <pre class="text-green-500 font-['Courier New'] text-sm">[*] Loading exploit module...
+[+] Target acquired
+[!] Executing payload...</pre>
+              </div>
+            </div>
+            <div class="project-details mt-4 hidden">
+              <div class="bg-red-900/20 p-4 rounded border border-red-600">
+                <h4 class="text-red-600 font-['Courier New'] mb-2">PROJECT DETAILS:</h4>
+                <p class="text-gray-400 font-['Courier New'] text-sm">Custom exploitation framework for penetration testing and vulnerability assessment.</p>
+                <div class="mt-2 flex gap-2">
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">Python</span>
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">Assembly</span>
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">Shell</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card" data-project="malware-analyzer">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg transform transition-all duration-300 hover:scale-105">
+            <div class="warning-header flex items-center mb-4">
+              <div class="warning-symbol animate-pulse mr-2">
+                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-['OCR A Extended'] text-red-600">MALWARE ANALYZER</h3>
+            </div>
+            <div class="project-content">
+              <div class="terminal-window bg-neutral-900 p-4 rounded">
+                <pre class="text-green-500 font-['Courier New'] text-sm">[*] Scanning binary...
+[+] Detecting signatures
+[!] Threats identified...</pre>
+              </div>
+            </div>
+            <div class="project-details mt-4 hidden">
+              <div class="bg-red-900/20 p-4 rounded border border-red-600">
+                <h4 class="text-red-600 font-['Courier New'] mb-2">PROJECT DETAILS:</h4>
+                <p class="text-gray-400 font-['Courier New'] text-sm">Automated malware analysis tool with real-time threat detection and reporting.</p>
+                <div class="mt-2 flex gap-2">
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">C++</span>
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">x86 ASM</span>
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">ML</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card" data-project="network-breacher">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg transform transition-all duration-300 hover:scale-105">
+            <div class="warning-header flex items-center mb-4">
+              <div class="warning-symbol animate-pulse mr-2">
+                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-['OCR A Extended'] text-red-600">NETWORK BREACHER</h3>
+            </div>
+            <div class="project-content">
+              <div class="terminal-window bg-neutral-900 p-4 rounded">
+                <pre class="text-green-500 font-['Courier New'] text-sm">[*] Mapping network...
+[+] Vulnerabilities found
+[!] Initiating breach...</pre>
+              </div>
+            </div>
+            <div class="project-details mt-4 hidden">
+              <div class="bg-red-900/20 p-4 rounded border border-red-600">
+                <h4 class="text-red-600 font-['Courier New'] mb-2">PROJECT DETAILS:</h4>
+                <p class="text-gray-400 font-['Courier New'] text-sm">Advanced network penetration testing suite with automated exploitation capabilities.</p>
+                <div class="mt-2 flex gap-2">
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">Ruby</span>
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">Go</span>
+                  <span class="px-2 py-1 bg-red-600/20 text-red-600 rounded text-xs">Rust</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .globe-background {
+      background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%),
+                  repeating-linear-gradient(0deg, rgba(255,0,0,0.1) 0px, transparent 1px, transparent 2px);
+      animation: rotate 20s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255,0,0,0.1), transparent);
+      transform: rotate(45deg);
+      animation: glitch 3s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: translateX(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) rotate(45deg); }
+    }
+  </style>
+
+  <script>
+    // Project card interactions
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const details = card.querySelector('.project-details');
+        details.classList.toggle('hidden');
+
+        // Play alert sound
+        const audio = new Audio('data:audio/wav;base64,UklGRh...');
+        audio.volume = 0.2;
+        audio.play();
+
+        // Add glitch effect
+        card.style.transform = 'scale(1.05)';
+        card.style.filter = 'brightness(1.5)';
+        setTimeout(() => {
+          card.style.transform = 'scale(1)';
+          card.style.filter = 'none';
+        }, 200);
+      });
+    });
+
+    // Random terminal text effect
+    setInterval(() => {
+      document.querySelectorAll('.terminal-window pre').forEach(terminal => {
+        const text = terminal.textContent;
+        const glitchedText = text.split('').map(char => 
+          Math.random() > 0.95 ? String.fromCharCode(Math.floor(Math.random() * 26) + 65) : char
+        ).join('');
+        terminal.textContent = glitchedText;
+        setTimeout(() => terminal.textContent = text, 100);
+      });
+    }, 3000);
+  </script>
+</div>
+</htmlCode></element><element id="a0cf7144-6f8d-4d9d-8c3c-fddf0d19976e" data-section-id="a0cf7144-6f8d-4d9d-8c3c-fddf0d19976e">
+
+<htmlCode>
+<div id="root">
+  <section id="certifications" class="min-h-screen bg-neutral-900 relative py-20">
+    <!-- Encryption Background -->
+    <div class="absolute inset-0 encryption-bg"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl md:text-6xl font-['Orbitron'] text-red-600 text-center mb-16 glitch-text">SECURITY CLEARANCE</h2>
+
+      <div class="flex flex-col gap-8">
+        <!-- Certification 1 -->
+        <div class="cert-card transform hover:scale-105 transition-all duration-300">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-red-600 cert-scan"></div>
+            
+            <div class="flex items-center gap-4">
+              <div class="cert-icon w-16 h-16 bg-red-600/20 rounded-full flex items-center justify-center border-2 border-red-600 animate-pulse">
+                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              
+              <div class="flex-1">
+                <h3 class="text-2xl font-['OCR A Extended'] text-red-600 mb-2">CERTIFIED ETHICAL HACKER</h3>
+                <p class="text-gray-400 font-['Courier New']">EC-Council</p>
+              </div>
+
+              <div class="cert-status flex items-center">
+                <span class="px-3 py-1 bg-red-600/20 text-red-600 rounded-full text-sm font-['Courier New'] animate-pulse">VERIFIED</span>
+              </div>
+            </div>
+
+            <div class="cert-details mt-4 hidden">
+              <div class="terminal-window bg-neutral-900 p-4 rounded font-['Courier New'] text-sm">
+                <pre class="text-green-500">
+[*] Certification ID: 0xA7B3C9D
+[*] Validation Hash: f7d8e9a2b4c6
+[*] Status: ACTIVE
+[!] WARNING: Advanced Security Clearance Detected</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="cert-card transform hover:scale-105 transition-all duration-300">
+          <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-red-600 cert-scan"></div>
+            
+            <div class="flex items-center gap-4">
+              <div class="cert-icon w-16 h-16 bg-red-600/20 rounded-full flex items-center justify-center border-2 border-red-600 animate-pulse">
+                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              
+              <div class="flex-1">
+                <h3 class="text-2xl font-['OCR A Extended'] text-red-600 mb-2">OFFENSIVE SECURITY CERTIFIED</h3>
+                <p class="text-gray-400 font-['Courier New']">OSCP</p>
+              </div>
+
+              <div class="cert-status flex items-center">
+                <span class="px-3 py-1 bg-red-600/20 text-red-600 rounded-full text-sm font-['Courier New'] animate-pulse">VERIFIED</span>
+              </div>
+            </div>
+
+            <div class="cert-details mt-4 hidden">
+              <div class="terminal-window bg-neutral-900 p-4 rounded font-['Courier New'] text-sm">
+                <pre class="text-green-500">
+[*] Certification ID: 0xB8C4D1E
+[*] Validation Hash: e9f1a3c5b7d2
+[*] Status: ACTIVE
+[!] WARNING: Advanced Exploitation Privileges Granted</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .encryption-bg {
+      background: 
+        linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='monospace' fill='rgba(255,0,0,0.1)' font-size='20'%3E🔒%3C/text%3E%3C/svg%3E");
+      animation: bgScroll 20s linear infinite;
+    }
+
+    .cert-scan {
+      animation: scan 2s linear infinite;
+    }
+
+    @keyframes scan {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    @keyframes bgScroll {
+      0% { background-position: 0 0; }
+      100% { background-position: 50px 50px; }
+    }
+  </style>
+
+  <script>
+    // Certificate card interactions
+    document.querySelectorAll('.cert-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const details = card.querySelector('.cert-details');
+        details.classList.toggle('hidden');
+
+        // Play verification sound
+        const audio = new Audio('data:audio/wav;base64,UklGRh...');
+        audio.volume = 0.2;
+        audio.play();
+
+        // Add breach simulation effect
+        card.classList.add('breached');
+        setTimeout(() => card.classList.remove('breached'), 1000);
+
+        // Trigger glitch animation
+        card.style.transform = 'scale(1.1)';
+        card.style.filter = 'brightness(1.5) hue-rotate(30deg)';
+        setTimeout(() => {
+          card.style.transform = 'scale(1.05)';
+          card.style.filter = 'none';
+        }, 200);
+      });
+    });
+
+    // Random glitch effect on certification titles
+    setInterval(() => {
+      const titles = document.querySelectorAll('.cert-card h3');
+      const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+      randomTitle.style.textShadow = '2px 2px 15px rgba(255,0,0,0.8)';
+      setTimeout(() => {
+        randomTitle.style.textShadow = 'none';
+      }, 150);
+    }, 3000);
+  </script>
+</div>
+</htmlCode></element><element id="e36f758f-b337-4300-978e-944b9e35e104" data-section-id="e36f758f-b337-4300-978e-944b9e35e104">
+
+<htmlCode>
+<div id="root">
+  <section id="testimonials" class="min-h-screen bg-neutral-900 relative py-20">
+    <!-- Data Breach Background -->
+    <div class="absolute inset-0 data-breach-bg"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl md:text-6xl font-['Orbitron'] text-red-600 text-center mb-16 glitch-text">TARGET FEEDBACK</h2>
+
+      <div class="testimonial-slider relative">
+        <!-- Testimonial Cards Container -->
+        <div class="overflow-hidden">
+          <div class="testimonials-track flex transition-transform duration-500">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+              <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg relative overflow-hidden">
+                <div class="security-scan absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+                <div class="mb-4">
+                  <div class="text-red-600 font-['OCR A Extended'] text-xl mb-2">[REDACTED]</div>
+                  <div class="text-gray-400 font-['Courier New'] text-sm">Security Director</div>
+                </div>
+                <div class="terminal-text text-green-500 font-['Courier New'] relative">
+                  <p class="glitch-text">"Exceptional penetration testing skills. Identified critical vulnerabilities that our internal team missed."</p>
+                </div>
+                <div class="mt-4 flex justify-end">
+                  <div class="security-level px-3 py-1 bg-red-600/20 text-red-600 rounded-full text-sm animate-pulse">
+                    SECURITY LEVEL: ALPHA
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+              <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg relative overflow-hidden">
+                <div class="security-scan absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+                <div class="mb-4">
+                  <div class="text-red-600 font-['OCR A Extended'] text-xl mb-2">[CLASSIFIED]</div>
+                  <div class="text-gray-400 font-['Courier New'] text-sm">Cybersecurity Lead</div>
+                </div>
+                <div class="terminal-text text-green-500 font-['Courier New'] relative">
+                  <p class="glitch-text">"Advanced exploit development capabilities. Successfully breached our systems through innovative attack vectors."</p>
+                </div>
+                <div class="mt-4 flex justify-end">
+                  <div class="security-level px-3 py-1 bg-red-600/20 text-red-600 rounded-full text-sm animate-pulse">
+                    SECURITY LEVEL: OMEGA
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card min-w-full md:min-w-[33.333%] px-4">
+              <div class="border-2 border-red-600 bg-neutral-800/80 p-6 rounded-lg relative overflow-hidden">
+                <div class="security-scan absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+                <div class="mb-4">
+                  <div class="text-red-600 font-['OCR A Extended'] text-xl mb-2">[ENCRYPTED]</div>
+                  <div class="text-gray-400 font-['Courier New'] text-sm">Network Administrator</div>
+                </div>
+                <div class="terminal-text text-green-500 font-['Courier New'] relative">
+                  <p class="glitch-text">"Unparalleled malware analysis skills. Detected and neutralized advanced persistent threats."</p>
+                </div>
+                <div class="mt-4 flex justify-end">
+                  <div class="security-level px-3 py-1 bg-red-600/20 text-red-600 rounded-full text-sm animate-pulse">
+                    SECURITY LEVEL: DELTA
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-red-600/20 p-2 rounded-full hover:bg-red-600/40 transition-all" id="prev-testimonial">
+          <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-600/20 p-2 rounded-full hover:bg-red-600/40 transition-all" id="next-testimonial">
+          <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .data-breach-bg {
+      background: 
+        linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,0,0,0.1) 10px, rgba(255,0,0,0.1) 20px);
+      animation: dataBreachBg 20s linear infinite;
+    }
+
+    .security-scan {
+      animation: scan 2s linear infinite;
+    }
+
+    @keyframes scan {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    @keyframes dataBreachBg {
+      0% { background-position: 0 0; }
+      100% { background-position: 40px 40px; }
+    }
+  </style>
+
+  <script>
+    // Testimonial Slider
+    const track = document.querySelector('.testimonials-track');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevBtn = document.getElementById('prev-testimonial');
+    const nextBtn = document.getElementById('next-testimonial');
+    let currentIndex = 0;
+
+    function updateSlider() {
+      const cardWidth = cards[0].offsetWidth;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = Math.max(currentIndex - 1, 0);
+      updateSlider();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = Math.min(currentIndex + 1, cards.length - 1);
+      updateSlider();
+    });
+
+    // Glitch effect on testimonial text
+    setInterval(() => {
+      document.querySelectorAll('.glitch-text').forEach(text => {
+        const originalText = text.textContent;
+        text.style.textShadow = '2px 2px 15px rgba(255,0,0,0.8)';
+        text.textContent = originalText.split('').map(char => 
+          Math.random() > 0.95 ? String.fromCharCode(Math.floor(Math.random() * 26) + 65) : char
+        ).join('');
+        setTimeout(() => {
+          text.textContent = originalText;
+          text.style.textShadow = 'none';
+        }, 150);
+      });
+    }, 3000);
+  </script>
+</div>
+</htmlCode></element><element id="7c285a02-edcf-4948-aff8-a1afce2f6f91" data-section-id="7c285a02-edcf-4948-aff8-a1afce2f6f91">
+
+<htmlCode>
+<div id="root">
+  <section id="contact" class="min-h-screen bg-neutral-900 relative py-20">
+    <!-- Matrix Background -->
+    <div class="absolute inset-0 matrix-bg"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <h2 class="text-4xl md:text-6xl font-['Orbitron'] text-red-600 text-center mb-16 glitch-text">INITIATE CONNECTION</h2>
+
+      <div class="max-w-3xl mx-auto">
+        <form id="contact-form" class="space-y-6">
+          <!-- Name Field -->
+          <div class="form-group relative">
+            <input type="text" id="name" required
+              class="w-full bg-neutral-800/80 border-2 border-red-600 rounded-lg p-4 text-red-600 font-['Courier New'] focus:outline-none focus:border-red-400 focus:shadow-[0_0_15px_rgba(255,0,0,0.5)] transition-all duration-300"
+              placeholder="[ENTER CODENAME]">
+            <div class="glitch-line"></div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group relative">
+            <input type="email" id="email" required
+              class="w-full bg-neutral-800/80 border-2 border-red-600 rounded-lg p-4 text-red-600 font-['Courier New'] focus:outline-none focus:border-red-400 focus:shadow-[0_0_15px_rgba(255,0,0,0.5)] transition-all duration-300"
+              placeholder="[SECURE EMAIL]">
+            <div class="glitch-line"></div>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-group relative">
+            <textarea id="message" rows="5" required
+              class="w-full bg-neutral-800/80 border-2 border-red-600 rounded-lg p-4 text-red-600 font-['Courier New'] focus:outline-none focus:border-red-400 focus:shadow-[0_0_15px_rgba(255,0,0,0.5)] transition-all duration-300"
+              placeholder="[ENCRYPTED MESSAGE]"></textarea>
+            <div class="glitch-line"></div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" id="submit-btn"
+              class="px-8 py-4 bg-red-600 text-white font-['OCR A Extended'] rounded-lg hover:bg-red-700 transition-all duration-300 relative overflow-hidden submit-btn">
+              <span class="relative z-10">EXECUTE TRANSMISSION</span>
+              <div class="explosion hidden absolute inset-0 bg-red-600"></div>
+            </button>
+          </div>
+        </form>
+
+        <!-- Social Links -->
+        <div class="mt-16 flex justify-center space-x-8">
+          <a href="#" class="social-link group">
+            <div class="w-12 h-12 bg-neutral-800 border-2 border-red-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:bg-red-600/20">
+              <svg class="w-6 h-6 text-red-600 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </div>
+          </a>
+          <a href="#" class="social-link group">
+            <div class="w-12 h-12 bg-neutral-800 border-2 border-red-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:bg-red-600/20">
+              <svg class="w-6 h-6 text-red-600 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .matrix-bg {
+      background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+      position: relative;
+    }
+
+    .matrix-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(255,0,0,0.1) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(255,0,0,0.1) 1px, transparent 1px);
+      background-size: 20px 20px;
+      animation: matrixMove 20s linear infinite;
+    }
+
+    .glitch-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: rgba(255,0,0,0.5);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .form-group:focus-within .glitch-line {
+      transform: scaleX(1);
+    }
+
+    @keyframes matrixMove {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px); }
+    }
+
+    .explosion {
+      animation: explode 0.5s ease-out forwards;
+    }
+
+    @keyframes explode {
+      0% { transform: scale(0); opacity: 1; }
+      100% { transform: scale(4); opacity: 0; }
+    }
+  </style>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Add glitch effect to button
+      submitBtn.classList.add('glitch-effect');
+      
+      // Play transmission sound
+      const audio = new Audio('data:audio/wav;base64,UklGRh...');
+      audio.volume = 0.2;
+      audio.play();
+
+      // Show explosion effect
+      const explosion = submitBtn.querySelector('.explosion');
+      explosion.classList.remove('hidden');
+      
+      // Reset form after animation
+      setTimeout(() => {
+        submitBtn.classList.remove('glitch-effect');
+        explosion.classList.add('hidden');
+        form.reset();
+      }, 1000);
+    });
+
+    // Add glitch effect to input fields
+    document.querySelectorAll('input, textarea').forEach(input => {
+      input.addEventListener('focus', () => {
+        const glitchInterval = setInterval(() => {
+          if (Math.random() > 0.95) {
+            input.style.transform = `translate(${Math.random() * 2 - 1}px, ${Math.random() * 2 - 1}px)`;
+            setTimeout(() => {
+              input.style.transform = 'none';
+            }, 50);
+          }
+        }, 100);
+
+        input.addEventListener('blur', () => clearInterval(glitchInterval));
+      });
+    });
+
+    // Social links hover effect
+    document.querySelectorAll('.social-link').forEach(link => {
+      link.addEventListener('mouseover', () => {
+        link.style.transform = `rotate(${Math.random() * 10 - 5}deg) scale(1.1)`;
+        setTimeout(() => {
+          link.style.transform = 'none';
+        }, 200);
+      });
+    });
+  </script>
+</div>
+</htmlCode></element><element id="af4c6bbc-c269-4ce3-8258-72755c2e4c99" data-section-id="af4c6bbc-c269-4ce3-8258-72755c2e4c99">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 relative py-12 border-t-2 border-red-600">
+    <!-- Glitch Background -->
+    <div class="absolute inset-0 glitch-overlay"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Logo Section -->
+        <div class="text-center md:text-left">
+          <h3 class="text-red-600 font-['Orbitron'] text-2xl mb-4 glitch-text">SANDEEP SINGH</h3>
+          <p class="text-gray-400 font-['Courier New'] text-sm">
+            <span class="typing-text">> System Status: Active</span>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="text-center">
+          <h4 class="text-red-600 font-['OCR A Extended'] mb-4">NAVIGATION_MATRIX</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#hero" class="text-gray-400 hover:text-red-600 font-['Courier New'] transition-colors duration-300">> Home</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-red-600 font-['Courier New'] transition-colors duration-300">> About</a>
+            </li>
+            <li>
+              <a href="#skills" class="text-gray-400 hover:text-red-600 font-['Courier New'] transition-colors duration-300">> Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="text-gray-400 hover:text-red-600 font-['Courier New'] transition-colors duration-300">> Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-red-600 font-['Courier New'] transition-colors duration-300">> Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Security Notice -->
+        <div class="text-center md:text-right">
+          <div class="border-2 border-red-600 p-4 rounded-lg bg-neutral-800/50">
+            <h4 class="text-red-600 font-['OCR A Extended'] mb-2">SECURITY_WARNING</h4>
+            <p class="text-gray-400 font-['Courier New'] text-sm terminal-text">
+              > This site is monitored
+              > Unauthorized access will be traced
+              > Enter at your own risk
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-8 pt-8 border-t border-red-600/30 text-center">
+        <p class="text-gray-400 font-['Courier New'] text-sm">
+          <span class="glitch-text">[ENCRYPTED] © 2024 All rights reserved</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .glitch-overlay {
+      background: 
+        linear-gradient(45deg, transparent 65%, rgba(255,0,0,0.1) 70%, transparent 75%);
+      background-size: 200% 200%;
+      animation: glitchMove 3s linear infinite;
+    }
+
+    @keyframes glitchMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 200% 200%; }
+    }
+
+    .terminal-text {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .terminal-text::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,0,0,0.2), transparent);
+      animation: scan 2s linear infinite;
+    }
+
+    @keyframes scan {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+
+  <script>
+    // Glitch effect for texts
+    document.querySelectorAll('.glitch-text').forEach(text => {
+      setInterval(() => {
+        if (Math.random() > 0.95) {
+          text.style.textShadow = `
+            ${Math.random() * 10}px ${Math.random() * 10}px ${Math.random() * 10}px rgba(255,0,0,0.7),
+            ${Math.random() * -10}px ${Math.random() * 10}px ${Math.random() * 10}px rgba(0,255,255,0.7)
+          `;
+          setTimeout(() => {
+            text.style.textShadow = 'none';
+          }, 50);
+        }
+      }, 2000);
+    });
+
+    // Navigation link hover effect
+    document.querySelectorAll('footer a').forEach(link => {
+      link.addEventListener('mouseover', () => {
+        link.style.textShadow = '0 0 10px rgba(255,0,0,0.8)';
+        link.textContent = link.textContent.split('').map(char => 
+          Math.random() > 0.8 ? String.fromCharCode(Math.floor(Math.random() * 26) + 65) : char
+        ).join('');
+      });
+
+      link.addEventListener('mouseout', () => {
+        link.style.textShadow = 'none';
+        link.textContent = link.getAttribute('href').replace('#', '> ');
+      });
+    });
+  </script>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
